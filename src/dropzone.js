@@ -1706,7 +1706,7 @@ export default class Dropzone extends Emitter {
     for (let file of files) {
       file.status = Dropzone.ERROR;
       this.emit("error", file, message, xhr);
-      this.emit("complete", file);
+      // this.emit("complete", file);
     }
     if (this.options.uploadMultiple) {
       this.emit("errormultiple", files, message, xhr);
